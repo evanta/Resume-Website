@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="style.css">
+
+	  <title> Evan Taylor, Computer Scientist </title>
+</head>
+<body>
+	<body onLoad="typeWriter()">
+	<header>
+	    <nav>
+	      <ul class="nav__links">
+	       <!-- <li><a href="josh.html"> Josh </a></li> -->
+	      </ul>
+	    </nav>
+  </header>
+
+	<br> 
+
+  <h1 align=center> This is the website for Evan Taylor! </h1>
+  <br>
+  <h2 align=center id= "demo" >  </h2>
+
+	<script>
+	var i = 0;
+	var txt = 'Its a work in progress but should be ready soon.';
+	var speed = 50;
+
+	function typeWriter() {
+	  if (i < txt.length) {
+	    document.getElementById("demo").innerHTML += txt.charAt(i);
+	    i++;
+	    setTimeout(typeWriter, speed);
+	  }
+	}
+	</script>
+	<br> 
+
+   <footer>
+    <p class = "text"> Taylorevan16@gmail.com </p> 
+  	</footer>
+
+</body>
