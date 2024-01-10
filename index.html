@@ -7,13 +7,27 @@
 </head>
 <body>
 	<body onload="typeWriter()">
+	
+	<style>
+	body {
+  		background-image: url('NYC background photo.jpeg');
+  		background-repeat: no-repeat;
+  		background-size: cover;
+	}
+	h1, h2{
+		color: white;
+	}
+	</style>
+
 	<header>
 		<div class = "logo">
 			<a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" ><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H160v400Zm140-40-56-56 103-104-104-104 57-56 160 160-160 160Zm180 0v-80h240v80H480Z"/></svg>
 			Evan Taylor </a> 
 		</div>
-
+		
+		<nav>
 	    <ul class="nav__links" >
+	      	<li><a href = "https://github.com/evanta?tab=repositories" target="_blank"> GitHub </a></li> 
 	      	<li><a href="resumePage.html"> Resume </a></li> 
 	    </ul>
 	    </nav>
@@ -21,13 +35,13 @@
 
 	<br> 
 
-  <h1 align=center> This is the website for Evan Taylor! </h1>
+  <h1 align=center> Hi, my name is Evan Taylor </h1>
   <br>
   <h2 align=center id= "tempText" >  </h2>
 
 	<script>
 	var i = 0;
-	var txt = 'Its a work in progress but should be ready soon.';
+	var txt = 'I am a computer science student in New York City';
 	var speed = 50;
 
 	function typeWriter() {
