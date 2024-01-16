@@ -36,7 +36,6 @@ a{
 li, button {
 font-family: 'Libre Franklin', sans-serif;
   font-weight: 400; 
-  font-size: 1.3vw;
   color: white; 
   text-decoration: none;
 }
@@ -59,23 +58,83 @@ header {
   color: white;
 }
 
-.logo a{
-  font-size: 2vw;
-  display: inline-flex;
-  align-items: center;
-  position: relative;
+/* Sizing for desktop full screen viewing */
+@media screen and (min-width: 601px) {
+  .logo a{
+    font-size: 2vw;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo svg{
+    /*display: inline-flex;
+    align-self: center;
+    top: .125em;
+    position: relative; */
+   width: 3vw;
+    height: 3vw;
+    fill: white; 
+  }
+
+  li, button {
+    font-size: 1.3vw; 
+  }
+
+  footer a{
+      font-size: 1.5vw;
+  }
+
+  .PDFdownloadr{
+    font-size: 1.5vw;
+  }
+
+  .PDFdownloadr svg{
+    height: 2vw;
+    width: 2vw;
+  }
+}
+
+/* This is all the font sizes for mobile viewing */
+@media screen and (max-width: 600px) { 
+  .logo a{
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+
+  }
+
+  .logo svg{
+    /*display: inline-flex;
+    align-self: center;
+    top: .125em;
+    position: relative; */
+    width: 24px;
+    height: 24px;
+    fill: white; 
+  }
+
+  li, button {
+    font-size: 16px; 
+  }
+
+  footer a{
+    font-size: 12px;
+  }
+
+  .PDFdownloadr{
+    font-size: 12px;
+  }
+
+  .PDFdownloadr svg{
+    height: 16px;
+    width: 16px;
+  }
 
 }
 
-.logo svg{
-  /*display: inline-flex;
-  align-self: center;
-  top: .125em;
-  position: relative; */
-  width: 3vw;
-  height: 3vw;
-  fill: white; 
-}
+
 
 .nav__links{
   list-style: none;
@@ -101,12 +160,6 @@ header {
   align-items: center;
   position: relative;
   fill: white;
-  font-size: 1.5vw;
-}
-
-.PDFdownloadr svg{
-  height: 2vw;
-  width: 2vw;
 }
 
 .containerRes img{
@@ -146,7 +199,6 @@ footer{
 footer a{
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 400; 
-  font-size: 1.5vw;
   color: white; 
   text-decoration: none;
 }
