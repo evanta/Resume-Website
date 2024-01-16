@@ -98,7 +98,7 @@ header {
 /* This is all the font sizes for mobile viewing */
 @media screen and (max-width: 600px) { 
   .logo a{
-    font-size: 12px;
+    font-size: 14px;
     display: inline-flex;
     align-items: center;
     position: relative;
@@ -116,15 +116,15 @@ header {
   }
 
   li, button {
-    font-size: 8px; 
+    font-size: 10px; 
   }
 
   footer a{
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .PDFdownloadr{
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .PDFdownloadr svg{
